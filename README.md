@@ -1,17 +1,28 @@
 # 📡 VLSM Calculator - Java
 
-Este es un proyecto de **Calculadora VLSM (Variable Length Subnet Mask)** desarrollado en Java. Permite calcular subredes de longitud variable a partir de una IP y una lista de requerimientos, optimizando el uso del espacio de direcciones IPv4.
+Este es un proyecto de **Calculadora VLSM (Variable Length Subnet Mask)** desarrollado en Java. Permite calcular subredes de longitud variable a partir de una IP y una lista de requerimientos, optimizando el uso del espacio de direcciones IPv4. (Desarrollado con fines educativos y influenciado por la Universidad Técnica del Norte, Carrera de Ingenieria de Software, Redes de Datos)
 
 ## 🚀 Características
 
-- Validación de IPs base (formato correcto, rango permitido).
-- Verificación de requerimientos de subredes.
+- Validación de IPs base (No controlado).
+- Verificación de requerimientos de subredes (No controlado).
 - Cálculo automático de subredes con máscaras variables.
 - Detección de casos en los que:
   - La IP no satisface los requerimientos.
   - Los requerimientos exceden el espacio disponible.
   - Las IPs ingresadas son inválidas.
 - Salida estructurada con los rangos de IP, dirección de red, broadcast y máscara.
+
+- Ejemplo de salida
+  ```bash
+    Para la RED: (RED A | 100 hosts)
+    Se asignara:
+    IP DE RED:	192.168.1.0 / 25
+    PRIMER HOST:	192.168.1.1 / 25
+    ULTIMO HOST:	192.168.1.126 / 25
+    BROADCAST:	192.168.1.127 / 25
+    MASCARA:	255.255.255.128
+  ```
 
 ## ⚠️ Estado del proyecto
 

@@ -1,18 +1,32 @@
-## Getting Started
+# 📡 VLSM Calculator - Java
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este es un proyecto de **Calculadora VLSM (Variable Length Subnet Mask)** desarrollado en Java. Permite calcular subredes de longitud variable a partir de una IP y una lista de requerimientos, optimizando el uso del espacio de direcciones IPv4.
 
-## Folder Structure
+## 🚀 Características
 
-The workspace contains two folders by default, where:
+- Validación de IPs base (formato correcto, rango permitido).
+- Verificación de requerimientos de subredes.
+- Cálculo automático de subredes con máscaras variables.
+- Detección de casos en los que:
+  - La IP no satisface los requerimientos.
+  - Los requerimientos exceden el espacio disponible.
+  - Las IPs ingresadas son inválidas.
+- Salida estructurada con los rangos de IP, dirección de red, broadcast y máscara.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## ⚠️ Estado del proyecto
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+> ⚠️ **Este proyecto no ha sido testeado al 100%.**
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Aunque se han realizado múltiples pruebas con distintos escenarios (IPs válidas, no válidas, insuficientes y sobrantes), **existe la posibilidad de que algunas IPs específicas puedan generar errores o resultados inesperados en el proceso de subneteo**. Se recomienda precaución si se planea usar esta herramienta en entornos críticos o de producción.
 
-## Dependency Management
+## 🛠️ Tecnologías usadas
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- Java 8 o superior
+- No Builds
+
+## 🖥️ Cómo usar
+
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/Kishindelle/java-vlsm-calculator.git
+   ```
